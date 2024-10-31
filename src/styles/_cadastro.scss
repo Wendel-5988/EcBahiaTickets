@@ -1,0 +1,72 @@
+@use 'var';
+
+.cadastro {
+    background-image: linear-gradient(var.$secondaryTextColor, var.$darkBlue, var.$blue);
+    height: 100vh;
+    &__content {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 80vh
+        
+    }
+    &__title{
+        font-size: 4vh;
+    }
+
+    &__form {
+        
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh;
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 50vh;
+            input {
+                width: 30vw;
+                height: 7vh;
+                padding-left: 1vw;
+                color: var.$darkBlue;
+            }
+            
+        }
+    }
+
+    @media (max-width: 768px) {
+        height: 200vh;
+        
+        &__content {
+            height: 180vh;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 5vh;
+        }
+        &__form {
+            width: 95vw;
+            gap: 3vh;
+    
+            &__title {
+                white-space: nowrap;
+            }
+            .formulario {
+                width: 100vw;
+                gap: 3vh;
+                input {
+                    width: 80vw;
+                }
+        
+                button {
+                    width:50vw ;
+                }
+            }
+        }
+    }
+}

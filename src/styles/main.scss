@@ -1,0 +1,41 @@
+@use 'var';
+@use 'hero';
+@use 'events';
+@use 'cadastro';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var.$textColor;
+    font-family: "Kanit", sans-serif;
+    position: relative;
+}
+.title {
+    text-align: center;
+    font-size: 7vh;
+    padding: 3vh;
+}
+
+button {
+    background-color: var.$darkBlue;
+    width: 20vw;
+    height: 6vh;
+    border: 0.1vh solid var.$textColor;
+    border-radius: 0.5vh;
+    font-size: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        background-image: linear-gradient(90deg, var.$cityBlue,  var.$blue, var.$cityBlue);
+    }
+
+    
+}
+
+body {
+    overflow-x: hidden;
+}

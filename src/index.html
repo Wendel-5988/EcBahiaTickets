@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EC BAHIA Tickets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star" />
+    <link rel="stylesheet" href="./styles/main.scss">
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <video class="hero__video" autoplay muted loop>
+                <source src="https://servidor-imgs.vercel.app/Bahiahero1080p.mp4">
+            </video>
+            <div class="hero__content">
+                <div class="hero__content__title">
+                    <span class="material-symbols-outlined hero__content__title__span">
+                        star
+                    </span>
+                    <h1>EC Bahia Tickets </h1>
+                    <span class="material-symbols-outlined hero__content__title__span">
+                        star
+                    </span>
+                </div>
+                <p class="hero__content__text">
+                    Compre ingressos para assistir aos jogos do Esquadrão.
+                </p>
+            </div>
+        </div>
+    </div>
+    <section class="events">
+        <div class="events__container">
+            <h2 class="title">Jogos</h2>
+            <hr>
+            <div class="events__content">
+                <div  class="events__content__tickets"  data-date="oct 05 2024, 19:00">
+                    <img src="https://servidor-imgs.vercel.app/images/bahiaxfla.jpeg" alt="Bahia x Flamengo">
+                    <h3>Bahia x Flamengo</h3>
+                    <p>
+                        Data: 05/10/2024 <br>
+                        Horário: 19h <br>
+                        <span class="contagem"></span>
+                    </p> 
+                    <button class="buy-button"></button>                    
+                </div>
+                <div class="events__content__tickets"  data-date="nov 05 2024, 21:30">
+                    <img src="https://servidor-imgs.vercel.app/images/bahiaxsao.jpg" alt="Bahia x São Paulo">
+                    <h3>Bahia x São Paulo</h3>
+                    <p>
+                        Data: 05/11/2024 <br>
+                        Horário: 21:30 <br>
+                        <span class="contagem"></span>
+                    </p>
+                    <button class="buy-button"></button>                 
+                </div>
+                <div  class="events__content__tickets" data-date="20 nov 2024, 00:00">
+                    <img src="https://servidor-imgs.vercel.app/images/bahiaxpal.png" alt="Bahia x Palmeiras">
+                    <h3>Bahia x Palmeiras</h3>
+                    <p>
+                        Data: 20/11/2024 <br>
+                        Horário: A confirmar <br>
+                        <span class="contagem"></span>
+                    </p>
+                    <button class="buy-button"></button>
+                </div>
+            </div>
+        </div>
+        <dialog class="dialog">
+            <div class="dialog__container">
+                <h3 class="dialog__title">Entrar</h3>
+                <form class="dialog__content">
+                    <input required type="number" placeholder="CPF:">
+                    <input required type="password" placeholder="Senha:">
+                    <button type="submit" id="submit-dialog">Entrar</button>
+                </form>
+                <p>Caso não tenha conta faça o <a class="close-dialog" href="#cadastro">REGISTRO</a></p>
+                <button type="button" class="close-dialog x">X</button>
+            </div>
+        </dialog>
+    </section>
+    <hr>
+    <section class="cadastro" id="cadastro">
+        <div class="container">
+            <h2 class="title">Cadastre-se</h2>
+            <hr>
+            <div class="cadastro__content">
+                <div class="cadastro__form">  
+                    <h3 class="form__title">Não sou sócio Esquadrão</h3>
+                    <form class="formulario"> 
+                        <div> 
+                            <input required type="text" placeholder="Nome completo"> 
+                        </div>
+                        <div>
+                            <input required type="email" placeholder="Email">
+                        </div>
+                        <div> 
+                            <input required type="number" placeholder="CPF">
+                        </div>
+                        <div>
+                            <input required type="password" class="pass"  placeholder="Senha">
+                        </div>
+                        <div>
+                            <input required type="password" class="senhaConfirm" placeholder="Confirme a senha">
+                        </div>
+                        <div> 
+                            <button class="formButton" type="submit">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="cadastro__form">  
+                    <h3 class="form__title">Sou sócio Esquadrão</h3>
+                    <form class="formulario"> 
+                        <div>
+                            <input required type="text" placeholder="Nome completo">
+                        </div>
+                        <div>
+                            <input required type="email" placeholder="Email">
+                        </div> 
+                        <div>
+                            <input required type="number" placeholder="CPF"> 
+                        </div>
+                        <div>
+                            <input required type="password" class="pass"  placeholder="Senha">
+                        </div>
+                        <div>
+                            <input required type="password" class="senhaConfirm" placeholder="Confirme a senha">
+                        </div>
+                        <div>
+                            <button class="formButton" type="submit">Cadastrar</button>
+                        </div>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./scripts/main.js"></script>
+</html>
