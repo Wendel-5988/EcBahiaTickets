@@ -63,10 +63,12 @@ const contaTempo = setInterval(function(){
         } else if (dias >= 10) {
             span.innerHTML = `${dias - 10}d ${horas}h ${minutos}m ${segundos}s para pré-venda`;
             button.innerHTML = `Indisponivel`
+            button.disabled = true;
             dataDate.classList.add('events--indisponivel')
         }else {
             span.innerHTML = `Esse evento está encerrado.`
             button.innerHTML = `Indisponivel`
+            button.disabled = true;
             dataDate.classList.add('events--indisponivel')
         }
     })

@@ -142,4 +142,18 @@
             width: 80vw;
         }
     }
+
+    @media (max-width: 426px) {
+        height: 250vh;
+
+        &__content {
+            padding: 0;
+            height: 230vh;
+
+            &__tickets {
+                width: 90vw;
+                height: 70vh;
+            }
+        }
+    }
 }
